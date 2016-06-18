@@ -12,6 +12,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'apps.parser',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -84,5 +85,10 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 try:
     from .local_settings import *
+except ImportError:
+    pass
+
+try:
+    from .parser_settings import *
 except ImportError:
     pass
