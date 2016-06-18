@@ -1,0 +1,6 @@
+*.pyc
+*.py~
+media
+www
+local_settings.py
+__pycache__
