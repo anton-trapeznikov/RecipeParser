@@ -1,0 +1,19 @@
+import sys
+import psycopg2.extensions
+
+DEBUG = True
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': '<< Postgres database name >>',
+        'USER': '<< Postgres database user >>',
+        'PASSWORD': '<< Postgres database user password >>',
+        'UNIX_SOCKET': '',
+        'HOST': 'localhost',
+        'PORT': '5432',
+        'TEST_CHARSET': 'UTF8',
+        'client_encoding': 'UTF8',
+        'default_transaction_isolation': 'read committed',
+        'timezone': 'Europe/Moscow',
+    }
+}
